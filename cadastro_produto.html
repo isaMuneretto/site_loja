@@ -1,0 +1,76 @@
+<!--ok-->
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Cadastro de Produtos</title>
+
+	<link rel="stylesheet" type="text/css" href="css/padrao.css">
+
+</head>
+<body>
+
+	<h2><center>Cadastro de produtos</center></h2>
+
+<br><br><br>
+
+	<form>
+		<fieldset>
+			<p>
+				<label for="l_codigo">Código:</label>
+				<input type="number" name="codigo" id="codigo" size="50" maxlength="100" placeholder="Digite o código">
+			</p>
+
+			<p>
+				<label for="l_nome">Nome:</label>
+				<input type="text" name="nome" id="nome" size="50" maxlength="40" placeholder="Digite o nome do produto"></input>
+			</p>
+
+			<p>
+				<label for="l_preco">Preço de Venda:</label>
+				<input type="text" name="preco" id="preco" size="50" maxlength="40" placeholder="Informe o preço do produto"></input>
+			</p>			
+
+			<p>
+				<label for=l_categoria>Categoria:</label>
+				<select name="categoria" id="categoria">
+					<option>--Selecione--</option>
+					<option value="casual">Casual</option>
+					<option value="fitness">Fitness</option>
+					<option value="praia">Praia</option>
+				</select>
+			</p>
+
+			<p>
+				<label for="l_ativos">Ativos:</label>
+				<input type="radio" name="ativos" id="ativos" value="S">
+					<label for="l_sim">Sim</label>
+				<input type="radio" name="ativos" id="ativos" value="N">
+					<label for="l_nao">Não</label>
+			</p>
+
+			<p>
+				<label for="l_tamanho">Tamanhos Disponíveis:</label>
+			
+				<input type="checkbox" name="pequeno" id="pequeno" value="pequeno">
+					<label for="l_pequeno">P</label>
+				<input type="checkbox" name="medio" id="medio" value="medio">
+					<label for="l_medio">M</label>
+				<input type="checkbox" name="grande" id="grande" value="grande">
+					<label for="l_grande">G</label>
+				<input type="checkbox" name="extra_grande" id="extra_grande" value="extra_grande">
+					<label for="l_extra_grande">GG</label>
+			</p>
+
+			<br>
+
+			<input type="submit" name="gravar" id="gravar" value="Gravar" onclick="window.location='lista_produtos.html'">
+
+			<input type="button" name="voltar" id="voltar" value="Voltar" onclick="window.location='lista_produtos.html'">
+
+		</fieldset>
+	</form>
+
+</body>
+</html>

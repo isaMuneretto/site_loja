@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+
+	<link rel="stylesheet" type="text/css" href="css/padrao.css">
+
+</head>
+<body>
+	<form>
+	<h2><center>Seja bem-vindo(a)!</center></h2>
+
+		<p>
+			<label for="l_email">E-mail:</label>
+			<input type="email" name="email" id="email" size="50" maxlength="80" placeholder="Digite seu e-mail,  exemplo:email@provedor.com" required>
+		</p>
+
+		<p>
+			<label for="l_senha">Senha:</label>
+			<input type="password" name="senha" id="senha" maxlength="50" minlength="3" placeholder="Digite sua senha" required>
+		</p>
+
+		<p>
+			<input type="submit" name="entrar" id="entrar" value="Entrar" onclick="window.location='lista_produtos.html'">
+		
+			<input type="reset" name="limpar" id="limpar" value="Limpar" >
+		</p>
+
+	</form>
+
+</body>
+</html>
