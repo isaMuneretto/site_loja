@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" type="text/css" href="css/cadastro.css">
+    <script src="js/funcoes.js"></script>
+</head>
+
+<body>
+    <header>
+        <section>
+            <img src="./logo.png" alt="Logo da empresa XPTO" width="130px" />
+        </section>
+    </header>
+
+
+    <br><br><br>
+    <div class="container">
+        <form action="lista_cliente.html" method="POST">
+            <h2>
+                <center>Cadastro de Clientes</center>
+            </h2>
+
+            <div class="input-container">
+                <label for="l_codigo">Código:</label>
+                <input type="number" name="codigo" id="codigo" size="50" maxlength="100" placeholder="Digite o código">
+            </div>
+            <br>
+            <div class="input-container">
+                <label for="l_nome">Nome:</label>
+                <input type="text" name="nome" id="nome" size="50" maxlength="40"
+                    placeholder="Informe o nome do cliente" required></input>
+
+            </div>
+            <br>
+            <div class="input-container">
+                <label for="l_cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf" size="40" maxlength="11" minlength="11"
+                    placeholder="Informe o CPF" required>
+            </div>
+            <br>
+            <div class="input-container">
+                <label for="l_datanascimento">Data de Nascimento:</label>
+                <input type="date" name="datanascimento" id="datanascimento" required>
+            </div>
+            <br>
+            <div class="input-container">
+                <label for="l_telefone">Telefone:</label>
+                <input type="text" name="telefone" id="telefone" size="40" maxlenght="11" minlength="11" placeholder="Informe o telefone " required>
+            </div>
+            <br>
+            <div class="input-container">
+                <label for="l_email">Email:</label>
+                <input type="email" name="email" id="email" size="50" maxlength="40" placeholder="Informe o E-mail"
+                    required>
+            </div>
+            <br>
+
+        </form>
+        <div class="button">
+            <input type="submit" name="gravar" id="gravar" value="Gravar" onclick="cadastrarCliente()">
+            <input type="button" name="voltar" id="voltar" value="Voltar" onclick="window.location='menu.html'">
+        </div>
+    </div>
+    <footer>
+        <adress>MK FASHION - Rua João Milioli, 600· Comerciário (48) 3333-4444</adress>
+    </footer>
+</body>
+
+</html>

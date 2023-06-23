@@ -1,0 +1,119 @@
+body{
+    font-family: Calibri;
+    background-color: rgb(241, 225, 235);
+    font-size: 20px;
+    margin: 0px;
+}
+
+header{
+    background-image: linear-gradient(to right , rgb(252, 252, 252), rgba(241, 224, 245, 0.774));
+    top: 0;
+}
+
+.container{
+    color: black;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: linear-gradient(to top , rgb(248, 182, 228), rgba(238, 204, 233, 0.774));
+    padding: 95px;
+    border-radius: 20px;
+    width: 50%;
+    height: 40%;
+    cursor: pointer;
+    box-shadow: 3px 3px 1px 0px #00000060;
+}
+
+h2{
+    position: absolute;
+    top: 3px;
+    padding: 3px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5px;        
+}
+
+.input-container input{
+    display: inline-block;
+    padding: 2px 2px ;
+    font-size: 16px;
+    width: 50%;  
+    border: 0;
+    border-bottom: 1px solid rgb(62, 9, 66);
+    outline: none;
+    background-color: transparent;
+    min-width: 180px;
+}
+
+.input{
+    display: inline-block;
+    padding: 2px 2px ;
+    font-size: 20px;
+    width: 50%;
+    margin-bottom: 15px;  
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+#categoria{
+    margin-top: 3px;
+    border: 0.8px solid rgb(121, 51, 122);
+    padding: 2px;
+    font-size: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#voltar{
+    margin-top: 10px;
+    background-image: linear-gradient(to right,rgb(250, 211, 240), rgb(243, 165, 243)); 
+    border: 1px solid rgb(121, 51, 122);
+    padding: 10px;
+    width: 16%;
+    color: rgb(92, 12, 68);
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    right: 52%;
+    margin-left: 3%;
+    font-weight: bold;
+    transition: all .3s ease-out;
+    justify-content: center;
+}
+
+#gravar{
+    margin-top: 10px;
+    background-image: linear-gradient(to right,rgb(250, 211, 240), rgb(212, 121, 212));   
+    border: 1px solid rgb(121, 51, 122);
+    padding: 10px;
+    width: 16%;
+    color: rgb(92, 12, 68);
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    right: 52%;
+    margin-left: 3%;
+    font-weight: bold;
+    transition: all .3s ease-out;
+    justify-content: center;
+}
+
+#voltar:hover, #gravar:hover{
+    opacity: 0.8;  
+    color: rgb(204, 27, 151)  
+}
+
+footer {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 3px;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    background: rgba(156, 128, 172, 0.842);
+    color: rgba(233, 225, 238, 0.842);
+    box-sizing: border-box;
+}

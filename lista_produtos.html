@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Lista de Produtos</title>
+	<link rel="stylesheet" type="text/css" href="css/lista.css">
+	<script src="js/funcoes.js"></script>
+</head>
+
+<body onload="listar()">
+	<header>
+		<section>
+			<img src="./logo.png" alt="Logo da empresa XPTO" width="130px" />
+		</section>
+	</header>
+
+	<div class="container">
+		<h2>
+			<center>Lista de produtos</center>
+		</h2>
+		<div class="table-wrapper">
+			<table>
+				<thead>
+
+					<tr>
+						<th class="cabecalho">Código</th>
+						<th class="cabecalho">Nome</th>
+						<th class="cabecalho">Preço de venda</th>
+						<th class="cabecalho">Categoria</th>
+						<th class="cabecalho">Ativo</th>
+						<th class="cabecalho">Tamanhos Disponíveis</th>
+					</tr>
+				</thead>
+				<tbody class="conteudo">
+
+
+
+				</tbody>
+			</table>
+
+
+		</div>
+		<div class="button">
+			<input type="submit" name="cadastrar" id="cadastrar" value="Cadastrar Produto" onclick="window.location='cadastro_produto.html'">
+			<input type="button" name="voltar" id="voltar" value="Voltar" onclick="window.location='menu.html'">
+			<input type="submit" name="logoff" id="logoff" value="Logoff" onclick="window.location='login.html'">
+			
+
+		</div>
+	</div>
+	
+	<footer>
+		<adress>MK FASHION - Rua João Milioli, 600· Comerciário (48) 3333-4444</adress>
+	</footer>
+
+	<script id="colunas" type="text/x-jsrender">
+		<td data-column="Código"></td>
+        <td data-column="Nome"></td>
+		<td data-column="Preço de venda"></td>
+		<td data-column="Categoria"></td>
+		<td data-column="Ativo"></td>
+		<td data-column="Tamanhos Disponíveis"></td>
+	</script>
+</body>
+
+</html>

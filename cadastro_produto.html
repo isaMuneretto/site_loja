@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cadastro de Produtos</title>
+		<link rel="stylesheet" type="text/css" href="css/cadastro.css">
+		<script src="js/funcoes.js"></script>
+	</head>
+<body>
+	<header>
+		<section>
+			<img src="./logo.png" alt="Logo da empresa XPTO" width="130px" />
+		</section>
+	</header>
+	
+
+<br><br><br>
+		<div class="container">
+			<form action="lista_produtos.html" method="POST">
+		
+					<h2><center>Cadastro de Produtos</center></h2>
+
+					<div class="input-container">
+						<label for="l_codigo">Código:</label>
+						<input type="number" name="codigo" id="codigo" size="50" maxlength="100" placeholder="Digite o código">
+					</div>
+					<br>
+					<div class="input-container">
+						<label for="l_nome">Nome:</label>
+						<input type="text" name="nome" id="nome" size="50" maxlength="40" placeholder="Digite o nome do produto"></input>
+					</div>
+					<br>
+					<div class="input-container">
+						<label for="l_preco">Preço de Venda:</label>
+						<input type="text" name="preco" id="preco" size="50" maxlength="40" placeholder="Informe o preço do produto"></input>		
+					</div>
+					<br>
+						<label for=l_categoria>Categoria:</label>
+						<select name="categoria" id="categoria">
+							<option>--Selecione--</option>
+							<option value="casual">Casual</option>
+							<option value="fitness">Fitness</option>
+							<option value="praia">Praia</option>
+						</select>
+					<br><br>
+					<div class="input">
+						<label for="l_ativos">Ativos:</label>
+						<input type="radio" name="ativos" id="ativos" value="S">Sim
+						<input type="radio" name="ativos" id="ativos" value="N">Não
+					</div>
+					<br>
+					<div class="input">
+						<label for="l_tamanho">Tamanhos Disponíveis:</label>
+						<input type="checkbox" name="tamanho" id="tamanho" value="P" />P
+						<input type="checkbox" name="tamanho" id="tamanho" value="M" />M
+						<input type="checkbox" name="tamanho" id="tamanho" value="G" />G
+					</div>					
+					<br>
+					<div class="button">
+						<input type="submit" name="gravar" id="gravar" value="Gravar" onclick="cadastrar()">
+						<input type="button" name="voltar" id="voltar" value="Voltar" onclick="window.location='menu.html'">	
+					</div>
+						
+			</form>
+		</div>
+	<footer>
+		<adress>MK FASHION - Rua João Milioli, 600· Comerciário (48) 3333-4444</adress>
+	</footer>	
+</body>
+</html>

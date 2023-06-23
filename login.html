@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+
+
+	<script language="JavaScript">
+		function validar() {
+			// só permitirá o envio se os dados forem fornecidos
+			const email_ok = "teste@mkfashion.com";
+			const senha_ok = "12345";
+
+			let email = document.getElementById("email").value;
+			let senha = document.getElementById("senha").value;
+
+			if (email == email_ok && senha == senha_ok) {
+				return true;
+			}
+			else {
+				alert("E-mail ou Senha Inválidos. Por favor, tente novamente.");
+				return false;
+			}
+		}
+	</script>
+
+</head>
+
+<body>
+	<header>
+		<section>
+			<img src="./logo.png" alt="Logo da empresa XPTO" width="130px" />
+
+		</section>
+	</header>
+
+	<div class="container" id="login">
+		<form action="menu.html" method="POST" onsubmit="return validar()">
+			<h2>Bem-vindo(a)!</h2>
+			<p>★彡Loja MK Fashion彡★</p>
+
+			<div class="input-container">
+				<label for="l_email">E-mail:</label>
+				<input type="email" name="email" id="email" size="50" maxlength="80"
+					placeholder="Digite seu e-mail, ex:email@provedor.com" required>
+			</div>
+			<br>
+			<div class="input-container">
+				<label for="l_senha">Senha:</label>
+				<input type="password" name="senha" id="senha" maxlength="50" minlength="3"
+					placeholder="Digite sua senha" required>
+			</div>
+
+			<div class="button">
+				<input type="submit" name="entrar" id="entrar" value="Entrar">
+				<input type="reset" name="limpar" id="limpar" value="Limpar">
+			</div>
+
+		</form>
+	</div>
+
+	<footer>
+		<adress>MK FASHION - Rua João Milioli, 600· Comerciário (48) 3333-4444</adress>
+	</footer>
+</body>
+
+</html>

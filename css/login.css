@@ -1,0 +1,145 @@
+body {
+	margin: 0px;
+	background-color: rgb(240, 217, 231);
+	font-family: calibri; 
+	font-size: 20px;
+}
+
+header{
+    background-image: linear-gradient(to right , rgb(252, 252, 252), rgba(241, 224, 245, 0.774));
+    top: 0;
+}
+
+.container{
+    color: black;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: linear-gradient(to top, rgb(237, 211, 241), rgba(227, 183, 236, 0.842));
+    padding: 15px;
+    border-radius: 4%;
+    width: 25%;
+    height: 50%;
+    cursor: pointer;
+    box-shadow: 3px 3px 1px 0px #00000060;
+}
+
+h2{
+    margin-top: 0px;
+    padding: 10px;
+    text-align: center;
+    color:rgb(33, 42, 71);
+    margin-bottom: 20px;    
+}
+
+p{
+    padding: 0px;
+    text-align: center;
+    color:rgb(33, 42, 71);
+    margin-bottom: 50px;  
+}
+
+.input-container input{
+    display: inline-block;
+    padding: 3px 3px;
+    font-size: 13px;
+    width: 50%;  
+    border: 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    outline: none;
+    background-color: transparent;
+    min-width: 250px;
+}
+
+
+#limpar{
+    margin-top: 55px;
+    background-image: linear-gradient(to right,rgb(214, 170, 235), rgb(236, 188, 236)); 
+    border: 1px solid rgb(121, 51, 122);
+    padding: 10px;
+    width: 20%;
+    color: rgb(92, 12, 68);
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    right: 52%;
+    margin-left: 3%;
+    font-weight: bold;
+    transition: all .3s ease-out;
+    justify-content: center;
+}
+
+#entrar{
+    margin-top: 55px;
+    background-image: linear-gradient(to right,rgb(214, 170, 235), rgb(236, 188, 236)); 
+    border: 1px solid rgb(121, 51, 122);
+    padding: 10px;
+    width: 20%;
+    color: rgb(92, 12, 68);
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    right: 52%;
+    margin-left: 3%;
+    font-weight: bold;
+    transition: all .3s ease-out;
+    justify-content: center;
+}
+
+#menu{
+    margin-top: 0px;
+    position: relative;
+    background-image: linear-gradient(to right,rgb(214, 170, 235), rgb(236, 188, 236)); 
+    border: 1px solid rgb(121, 51, 122);
+    padding: 0px 5px 3px 5px;
+    margin-bottom: 20px;
+    width: 80%;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 10px;
+    bottom: 5px;
+    font-weight: bold;
+    transition: all .3s ease-out;
+}
+
+#logoff{
+    margin-top: 0px;
+    position: relative;
+    background-image: linear-gradient(to right,rgb(214, 170, 235), rgb(236, 188, 236));  
+    border: 1px solid rgb(121, 51, 122);
+    padding: 5px;
+    width: 25%;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    right: 0%;
+    margin-left: 32%;
+    bottom: 0px;
+    font-weight: bold;
+    transition: all .3s ease-out;
+    justify-content: center;
+}
+
+#limpar:hover, #entrar:hover, #logoff:hover{
+    opacity: 0.8;  
+    color: rgb(204, 27, 151)  
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 3px;
+    text-align: center;
+    background: rgba(156, 128, 172, 0.842);
+    color: rgb(233, 225, 238, 0.842);
+}
